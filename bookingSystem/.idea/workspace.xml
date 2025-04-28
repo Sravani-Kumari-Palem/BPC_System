@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90a17c1b-8bb0-4e8e-850f-0df2201f32b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BPC/src/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPC/src/BookingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/BookingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPC/src/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPC/src/Physiotherapist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/Physiotherapist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPC/src/Treatment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BPC/src/Treatment.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Sravani-Kumari-Palem&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Sravani-Kumari-Palem/BPC_BookingSystem.git&quot;,
+    &quot;accountId&quot;: &quot;ecf9441b-a7c0-4442-b37e-e61934918309&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2wAZQF6rmUpj6nqpobqSA1RMu9l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ClinicSystemTest.executor": "Run",
+    "JUnit.ClinicSystemTest.testCancelAppointment.executor": "Run",
+    "JUnit.ClinicSystemTest.testPatientHasConflict.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.ClinicSystemTest.testCancelAppointment">
+    <configuration name="ClinicSystemTest.testCancelAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org" />
+      <option name="MAIN_CLASS_NAME" value="org.ClinicSystemTest" />
+      <option name="METHOD_NAME" value="testCancelAppointment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicSystemTest.testPatientHasConflict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org" />
+      <option name="MAIN_CLASS_NAME" value="org.ClinicSystemTest" />
+      <option name="METHOD_NAME" value="testPatientHasConflict" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClinicSystemTest.testCancelAppointment" />
+        <item itemvalue="JUnit.ClinicSystemTest.testPatientHasConflict" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90a17c1b-8bb0-4e8e-850f-0df2201f32b9" name="Changes" comment="" />
+      <created>1745486324161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745486324161</updated>
+    </task>
+    <servers />
+  </component>
+</project>
