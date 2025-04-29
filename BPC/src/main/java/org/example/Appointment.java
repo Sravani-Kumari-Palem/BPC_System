@@ -3,6 +3,8 @@ package org.example;
 import java.time.LocalDateTime;
 
 public class Appointment {
+
+
     public enum Status { BOOKED, CANCELLED, ATTENDED }
 
     private static int nextId = 1;
@@ -56,6 +58,17 @@ public class Appointment {
     }
     public void setAppointmentId(int appointmentId) {
         this.id = appointmentId;
+    }
+    public void setTreatment(Treatment newTreatment) {
+        treatment=newTreatment;
+    }
+
+    public void setDateTimeStart(LocalDateTime dateTimeStart) {
+        this.dateTimeStart=dateTimeStart;
+    }
+
+    public void setDateTimeEnd(LocalDateTime dateTimeEnd) {
+        this.dateTimeEnd=dateTimeEnd;
     }
     @Override
     public String toString() {

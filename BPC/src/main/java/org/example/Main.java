@@ -34,9 +34,9 @@ public class Main {
                 new Treatment("Neural Mobilisation", LocalDateTime.of(2025, 5, 17, 14, 0), LocalDateTime.of(2025, 5, 17, 15, 0), p2),
                 new Treatment("Pool Rehabilitation", LocalDateTime.of(2025, 5, 18, 13, 0), LocalDateTime.of(2025, 5, 18, 14, 0), p3),
 
-                new Treatment("Massage", LocalDateTime.of(2025, 5, 22, 10, 0), LocalDateTime.of(2025, 5, 22, 11, 0), p3),
-                new Treatment("Osteopathy", LocalDateTime.of(2025, 5, 23, 11, 0), LocalDateTime.of(2025, 5, 23, 12, 0), p2),
-                new Treatment("Physiotherapy", LocalDateTime.of(2025, 5, 24, 12, 0), LocalDateTime.of(2025, 5, 24, 13, 0), p1),
+                new Treatment("Massage", LocalDateTime.of(2025, 5, 1, 10, 0), LocalDateTime.of(2025, 5, 1, 11, 0), p3), // Treatment 1
+                new Treatment("Osteopathy", LocalDateTime.of(2025, 5, 1, 10, 30), LocalDateTime.of(2025, 5, 1, 11, 30), p2),// Treatment 2 (overlaps with Treatment 1)
+                new Treatment("Physiotherapy", LocalDateTime.of(2025, 5, 11, 15, 30), LocalDateTime.of(2025, 5, 11, 16, 30), p2),
                 new Treatment("Spine Mobilisation", LocalDateTime.of(2025, 5, 25, 14, 0), LocalDateTime.of(2025, 5, 25, 15, 0), p1)
         );
 
@@ -51,6 +51,10 @@ public class Main {
             System.out.println("3. Remove Patient by ID");
             System.out.println("4. View All Treatment Slots");
             System.out.println("5. Generate End-of-Term Report");
+            System.out.println("6. Book Appointment");
+            System.out.println("7. Change/Cancel Appointment");
+            System.out.println("8. Attend Appointment");
+
             System.out.println("0. Exit");
             String choice = scanner.nextLine();
             switch (choice) {
@@ -95,6 +99,51 @@ public class Main {
                 case "5" -> {
                     clinic.generateEndOfTermReport();
                 }
+                case "6" -> {
+                    System.out.print("Enter patient ID: ");
+                    int patientId = Integer.parseInt(scanner.nextLine());
+
+                    System.out.println("Search by: 1) Area of Expertise  2) Physiotherapist Name");
+                    String method = scanner.nextLine();
+                    System.out.print("Enter search criteria: ");
+                    String criteria = scanner.nextLine();
+
+                    clinic.bookAppointment(patientId, method, criteria);
+                }
+                case "7" -> {
+                    System.out.print("Enter your patient ID: ");
+                    int patientId = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter your booking ID: ");
+                    int bookingId = Integer.parseInt(scanner.nextLine());
+
+                    System.out.println("1. Cancel Appointment");
+                    System.out.println("2. Change Appointment");
+                    String subChoice = scanner.nextLine();
+
+                    if (subChoice.equals("1")) {
+                        clinic.cancelAppointment(patientId, bookingId);
+                    } else if (subChoice.equals("2")) {
+                        System.out.println("Search new appointment by: 1) Area of Expertise  2) Physiotherapist Name");
+                        String method = scanner.nextLine();
+                        System.out.print("Enter search criteria: ");
+                        String criteria = scanner.nextLine();
+
+                        clinic.changeAppointment(patientId, bookingId, method, criteria);
+                    } else {
+                        System.out.println("Invalid choice.");
+                    }
+                }
+                case "8" -> {
+                    System.out.print("Enter your patient ID: ");
+                    int patientId = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter your booking ID: ");
+                    int bookingId = Integer.parseInt(scanner.nextLine());
+
+                    clinic.attendAppointment(patientId, bookingId);
+                }
+
 
                 case "0" -> {
                     System.out.println("Exiting... Goodbye!");
