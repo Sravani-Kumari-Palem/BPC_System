@@ -251,6 +251,7 @@ public class ClinicSystem {
         addAppointment(appointment);
         System.out.println("Appointment successfully booked.");
     }
+
     public void attendAppointment(int patientId, int bookingId) {
         Optional<Appointment> opt = appointments.stream()
                 .filter(a -> a.getId() == bookingId && a.getPatient().getId() == patientId && a.getStatus() == Appointment.Status.BOOKED)
